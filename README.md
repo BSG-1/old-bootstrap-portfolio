@@ -1,1 +1,2 @@
-# Bootstrap-Portfolio
+# Hangman-Game
+Javascript-based game

@@ -1,117 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+SC|Bellefair" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<title>Index</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+	<title>Hangman</title>
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-inverse">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="index.html">Bahadur Singh Ghataorhe</a>
-		    </div>
-		      
-		      <form class="navbar-form navbar-left">
-		        <div class="form-group">
-		          <input type="text" class="form-control" placeholder="Search">
-		        </div>
-		        <button type="submit" class="btn btn-inverse">Submit</button>
-		      </form>
-		      
-		      <ul class="nav navbar-nav navbar-right">
-		        <li class="dropdown" class="text-center">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="dropdown-menu" aria-haspopup="true" aria-expanded="false">Explore Sections<span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="contact.html">Contact Me</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="portfolio.html">Portfolio</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="index.html">About Me</a></li>
-		          </ul>
-		        </li>
-		      </ul>
-		  </div>
-		</nav>
-	</header>
-	
-	<br><br><br><br><br>
-	<main role="main" class="container">
-	<!--Navbar-->	
+	<div class="container">
+	<br>
 		<div class="jumbotron">
-			<div class="row">
-				<h2 class="text-center" strong>Standby, Empire-Building in Progress...</h2>
-				<br>
-				<p class="text-center">San Francisco | Atlanta | Charleston | London</p>
-			</div>
-			<br>
-			<div class="row">
-				<div class="text-center">
-					<a href="portfolio.html" class="btn btn-primary" role="button">Portfolio</a>
-		  			<a href="index.html" class="btn btn-success" role="button">About Me</a>
-		  			<a href="contact.html" class="btn btn-info" role="button">Contact Me</a>
-				</div>
-			</div>
+			<h1 class="text-center">Star Wars Hangman Game</h1>
+			<h3 class="text-center">Press any key to get started!</h3>
+			<div class="row" class="text-center">
+			<button id="reset-button" class="text-center" class="btn btn-primary"><strong>Reset Game</strong></button>
 		</div>
+	</div>
 
-	<!--Row & Columns for About Me section-->
-		<div class="row">
-			<div class="col-xs-9 col-sm-9 col-md-8 col-lg-8">
-				<div class="panel panel-default">
-					<div class="panel-title">
-						<h3 class="text-center">About Me</h3>
-					</div>
-					<div class="panel-body"> 
-						<div class="col-sm-4">
-							<a class="thumbnail" href="https://placeholder.com">
-								<img src="http://via.placeholder.com/200x200">
-							</a>
-						</div>
-						<p class="text-left">Bahadur Ghataorhe was born in London, United Kingdom and made his way to the San Francisco Bay Area at just 6 weeks old. Since then, he has made his way to various cities in the United States, but ultimately could not resist the pull of home. Coming back in 2016 after a few years in Atlanta, GA and Charleston, SC he made a commitment to explore his passions and landed on web development as the career to lead him to his goals.</p> 
-						<p class="text-left">Since then, he has become a full time personal trainer at Danville Fitness 19, along with being an Assistant General Manager at the same location. More importantly, he made the decision to join UC Berkeley Extension's Coding Bootcamp, and aims to complete the program by April 2018 in order to become employable in the tech industry following graduation.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">			
-				<div class="panel panel-default">
-					<div class="panel-title">
-						<h3 class="text-center">Connect With Me</h3>
-					</div>
-					<div class="panel-body">		
-						<div class="col-sm-4">
-							<a href="https://github.com/BSG-1"><img class="img-responsive" src="assets/images/if_github_square_107105.png"></a>
-						</div>
-						<div class="col-sm-4">	
-							<a href="https://www.linkedin.com/in/bahadurghataorhe"><img class="img-responsive" src="assets/images/if_LinkedIn_social_network_logo_1920528.png"></a>
-						</div>
-						<div class="col-sm-4">	
-							<a href="https://stackoverflow.com/users/8589356/bghataorhe"><img class="img-responsive" src="assets/images/if_overflow_334695.png"></a>
-						</div>
+	<div class="panel">
+		<div class="panel-title">
+			<div class="panel-body">
+				<div class="row">
+					<div class="text-center">
+						<div class="underscores" class="text-center"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</main>
+	</div>
 	
-	<footer class="footer">
-		<div class="container">
-			<span class="text-muted">© Copyright 2017 Bahadur Singh Ghataorhe</span>
-		</div>
-	</footer>
+	<div class="panel">
+		<div class="panel-title text-center">Correct Guesses: </div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="text-center">
+						<div class="rightGuess"></div>
+					</div>
+				</div>
+			</div>
+	</div>
 
-  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<div class="panel">
+		<div class="panel-title text-center">Incorrect Guesses: </div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="text-center">
+						<div class="wrongGuess"></div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+
+	<script src="assets/javascript/game.js"></script>
 
 </body>
 </html>
