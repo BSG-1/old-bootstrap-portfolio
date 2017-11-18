@@ -1,41 +1,36 @@
+/*Background image*/
 body {
-	background-color: black;
-}
-.jumbotron {
-	font-family: 'Spectral SC', serif;
-	font-size: 20px;
+	background-image: url("../images/hypnotize.png");
+	background-repeat: repeat;
+	background-position: center;
 }
 
-h1 {
-	font-family: 'Spectral SC', serif;
-	font-size: 10px;
+/*Panel-Headings & Body Colors*/
+
+
+/*How to play the game*/
+#blue {
+	color: blue;
+}
+#green {
+	color: green;
+} 
+#red {
+	color: red;
 }
 
-h3 {
-	font-family: 'Spectral SC', serif;
-	font-size: 20px;
+#yellow {
+	color: #EEE8AA;
 }
 
-.container {
-	background-color: red;
-}
-.underscores {
-	align-content: center;
-	font-size: 40px;
+/*Displays*/
+
+/*Crystals*/
+.thumbnail img {
+	height: 100px;
+	float: left;
+	margin-left: 70px;
 }
 
-.panel-title {
-	border-style: solid;
-	background-color: white;
-	font-family: 'Spectral SC', serif;
-	font-size: 20px;
-}
+/*Total*/
 
-.panel-body {
-	font-family: 'Spectral SC', serif;
-	font-size: 20px;
-}
-
-#reset-button {
-
-}

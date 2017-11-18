@@ -1,2 +1,1 @@
-# Hangman-Game
-Javascript-based game
+# Week-4-Game
