@@ -1,36 +1,48 @@
-/*Background image*/
 body {
-	background-image: url("../images/hypnotize.png");
-	background-repeat: repeat;
-	background-position: center;
+	background-color: black;
+	background-url
 }
 
-/*Panel-Headings & Body Colors*/
-
-
-/*How to play the game*/
-#blue {
-	color: blue;
-}
-#green {
-	color: green;
-} 
-#red {
-	color: red;
+.container {
+	background-color: red;
 }
 
-#yellow {
-	color: #EEE8AA;
+h2 {
+	font-family: 'Spectral SC', serif;
+	font-size: 60px;
+	font-weight: bold;
 }
 
-/*Displays*/
-
-/*Crystals*/
-.thumbnail img {
-	height: 100px;
-	float: left;
-	margin-left: 70px;
+#timer {
+	border-style: solid;
+	border-color: black;
+	background-color: white;
+	font-family: 'Spectral SC', serif;
+	font-size: 20px;
 }
 
-/*Total*/
+
+#questions {
+	font-family: 'Spectral SC', serif;
+	font-size: 20px;
+}
+
+
+
+#A {
+	page-break-after: always;
+	font-family: 'Spectral SC', serif;
+	font-size: 20px;
+}
+
+.button {
+	display: block;
+}
+
+h3 {
+	font-family: 'Spectral SC', serif;
+	font-size: 25px;
+}
+
+
 

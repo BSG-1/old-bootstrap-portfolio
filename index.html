@@ -1,102 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Crystal Collector Game</title>
+	<title>Trivia Game</title>
+	
+	<!--Link to Google font-->
+	<link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
 	
 	<!--Link to Boostrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
 	<!--Link to css stylesheet-->
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
 </head>
 <body>
+	<br><br>
+	<!--Container-->
 	<div class="container">
-		<!--Game Title/instructions-->
+		<br>
+		<!--Divs for Game Title-->
 		<div class="jumbotron">
-			<h2 class="text-center">Crystal Collector</h2>
-		</div>
-		<div class="row">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">How to play the game</h3>
-				</div>
-				<br>
-				<ol>
-					<li>You will be given a random number at the start of the game that you are to match.</li>
-					<li>You will do this via the 4 cyrstals below.</li>
-					<ul>
-						<li id="blue">Blue</li>
-						<li id="green">Green</li>
-						<li id="red">Red</li>
-						<li id="yellow">Yellow</li>
-					</ul>
-					<li>Clicking on a crystal will add a specific amount of points to your total. The value of each crystal is hidden from you until you click it.</li>
-					<li>You win the game by matching your total to the random number.</li>
-					<li>You lose the game if your total goes over the random number.</li>
-					<li>Each time the game begins, the random number along with the values of each crystal, will change.</li>
-				</ol>
+			<h2 class="text-center">Star Wars Trivia Game!</h2>
+			<div class="row text-center">
+				<!--Start Button-->
+				<button type="button" id="startButton" class="btn btn-danger">Start Game</button>
 			</div>
 		</div>
 
-		<!--Display for "number to get/random number" & Wins/Losses-->
-		<div class="row">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Displays</h3>
-				</div>
-
-				<div class="panel-body">
-					<div id="randomNumToMatch" class="col-sm-6">
-						<!--Number to get-->
-						<h4>Number to get: <span id="randomNum"></span></h4>
-					</div>
-
-					<div id="winsAndLosses" class="col-sm-6">
-						<!--Wins & Losses-->
-						<h4>Wins: <span id="numberWins"></span></h4>
-						<h4>Losses: <span id="numberLosses"></span></h4>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!--Crystal images to click for points-->
-		<div class="row thumbnail">
-			<!--blue crystal-->
-			<div class="col-sm-3">
-				<img src="assets/images/blue.png" class="gemImage" id="crystalOne" value="plus" alt="Blue Gem">
-			</div>
+		<!--Panel for Questions/Answers-->
+		<div class="panel">
+			<!--Timer passed into panel-title-->
+			<div class="panel panel-title text-center" id="timer"></div>
 			
-			<!--green crystal-->
-			<div class="col-sm-3">
-				<img src="assets/images/green.png" class="gemImage" id="crystalTwo" value="plus" alt="Green Gem">
-			</div>
-			
-			<!--red crystal-->	
-			<div class="col-sm-3">
-				<img src="assets/images/red.png" class="gemImage" id="crystalThree" value="plus" alt="Red Gem">
-			</div>
-			
-			<!--yellow crystal-->
-			<div class="col-sm-3">
-				<img src="assets/images/yellow.png" class="gemImage" id="crystalFour" value="plus" alt="Yellow Gem">
-			</div>
+			<!--Questions & choices passed into panel-body-->
+			<div class="panel panel-body">
+				<div class="row text-center" id="questions"></div>
+			</div>		
 		</div>
-
-		<!--User Total-->
-		<div class="row">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Your Total</h3>
-				</div>
-				<div class="panel-body">
-					<h4>Total: <span id="userTotal"></span></h4>
-				</div>
-			</div>
-		</div>
+	
 	</div>
 
 	<!--Link to jQuery Lib-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="assets/javascript/game.js"></script>
+	<script src="assets/javascript/app.js"></script>
 </body>
 </html>
