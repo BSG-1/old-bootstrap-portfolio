@@ -33,7 +33,7 @@ var questions = [{
 		images: ["<img src=\"assets/images/bane.gif\">"],
 		correct: 0
 }, {
-		question: "On what planet were both Luke and his father born?",
+		question: "On what planet were both Luke and his father raised?",
 		choice: ["A: Kamino", "B: Tattooine", "C: Onkar Plutt", "D: Sebulba"],
 		images: ["<img src=\"assets/images/tattooine.gif\">"],
 		correct: 1
@@ -54,7 +54,7 @@ var questions = [{
 		correct: 2
 }, {
 		question: "What is widely considered the reason Anakin Skywalker was seduced by the Dark Side?",	
-		choice: ["A: He was just emo", "B: He had to save Padme", "C: Anakin's hatred of sand", "D: He was jealous of Obi-Wan's beard"],
+		choice: ["A: He was just emo", "B: He had to save Padme", "C: Anakins hatred of sand", "D: He was jealous of Obi-Wan's beard"],
 		images: ["<img src=\"assets/images/turnt.gif\">"],
 		correct: 1
 }, {
