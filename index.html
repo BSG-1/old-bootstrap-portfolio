@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Trivia Game</title>
 	
-	<!--Link to Google font-->
-	<link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+	<title>Car Giphy</title>
 	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!--Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+
 	<!--Link to Boostrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	
-	<!--Link to css stylesheet-->
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
 </head>
 <body>
-	<br><br>
-	<!--Container-->
-	<div class="container">
-		<br>
-		<!--Divs for Game Title-->
-		<div class="jumbotron">
-			<h2 class="text-center">Star Wars Trivia Game!</h2>
-			<div class="row text-center">
-				<!--Start Button-->
-				<button type="button" id="startButton" class="btn btn-danger">Start Game</button>
-			</div>
-		</div>
 
-		<!--Panel for Questions/Answers-->
-		<div class="panel">
-			<!--Timer passed into panel-title-->
-			<div class="panel panel-title text-center" id="timer"></div>
-			
-			<!--Questions & choices passed into panel-body-->
-			<div class="panel panel-body">
-				<div class="row text-center" id="questions"></div>
-			</div>		
+	<br>
+
+	<div class="container">
+		
+		<!--Loading car Buttons from hw.js-->
+		<div id="topicButtons"></div>
+		
+		<hr>
+		<br><br>
+		
+		<!--Form to submit car gifs to page-->
+		<div class="text-right">
+			<form id="car-form">
+				<label for="car-input" id="carLabel">Add a car!</label>
+					<br>
+				<input type="text" id="carInput">
+					<br>
+				<input class="btn btn-success" id="addCar" type="submit" value="Submit">
+			</form>
 		</div>
-	
+		
+		<br><br>
+		
+		<!--Display images and ratings as 2 columns-->
+		<div id="cars"></div>
+
 	</div>
 
-	<!--Link to jQuery Lib-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="assets/javascript/app.js"></script>
+	<script src="hw.js"></script>
 </body>
 </html>

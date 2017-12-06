@@ -1,2 +1,2 @@
-# TriviaGame
-HW #5
+# GiphyHW
+APIs &amp; Ajax (HW #6)
