@@ -1,2 +1,2 @@
-# GiphyHW
-APIs &amp; Ajax (HW #6)
+# Train_Scheduler
+Assignment #7 (Firebase activities)
