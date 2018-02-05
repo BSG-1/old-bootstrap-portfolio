@@ -1,0 +1,45 @@
+body {
+	background-image: url("../images/MountDiablo.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+main {
+	min-height: 1000px;
+	font-family: font-family: 'Alegreya', serif;
+}
+
+p {
+	font-family: 'Bellefair', serif;
+	font-size: 18px;
+}
+
+.dropdown-menu {
+	background-color: black;
+}
+
+.panel-title {
+	font-family: 'Alegreya SC', serif;
+	font-size: 25px;
+}
+
+.footer {
+	padding-top: 10px;
+	text-align: center;
+	height: 40px;
+	background-color: black;
+	font-family: 'Bellefair', serif;
+	font-size: 18px;
+}
+
+.img-responsive:hover {
+	opacity: 0.5;
+}
+
+element {fadein: 4s;};
+@keyframes fadein {
+	from {opacity: 	0;}
+	to {opacity: 	8;}
+}
