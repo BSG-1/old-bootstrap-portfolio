@@ -20,7 +20,8 @@ p {
 	background-color: black;
 }
 
-.panel-title {
+.panel-title, 
+h3 {
 	font-family: 'Alegreya SC', serif;
 	font-size: 25px;
 }
